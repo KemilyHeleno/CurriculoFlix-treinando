@@ -1,3 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*Parte 1: Nav*/
+
+/* Todos os elementos ganham margem zero e seu tamanho será 
+medido contendo as bordas*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+ }
+
+
+/* O corpo da página ganha fonte arial e fund preto */
+ body {
+         font-family: arial, Gelvetica, sans-serif;
+         background-color: #111;
+   }
+
+/* A logo da Netflix terá 80px */
+/* A propriedade CSS object-fit especifica como o conteúdo 
+de um elemento substituido deve ser ajustado a caixa 
+establecida pela altura e largura usadas.*/
+
+/* O conteúdo substituído é dimensionado para manter sua proporção
+enquanto se encaixa na caixa de conteúdo do elemento: seu tamanho
+de objeto concreto é resolvido como uma restrição de restrição
+em relação à largura e altura usadas do elemento. */
+
+.nav__logo {
+    width: 80px;
+    object-fit: contain;
+}
+
+/* A foto "avatar" é ajustar para conter na caixa com a largura de 30px*/
+.nav__avatar {
+    width: 10px;
+    object-fit: contain;
+}
+
+.nav {
+    position: fixed; /* sempre fica no mesmo lugar da página */
+    top: 0; /* 0px do topo */
+    width: 100%; /* ocupa 100% da largura disponível */
+    display: flex;
+    justify-content: space-between; /* os elementos serão igualmente espaçados entre si */
+    padding: 20px; /* padding de 20px do conteúdo as bordas em todos os elementos */
+    z-index: 1; /* fica acima de todos os outros elementos */
+    transition-timing-function: ease-in; /* Efeito de transição com inicio */
+    transition: all 0.5s; /* Aparece em 0.5s */
+}
