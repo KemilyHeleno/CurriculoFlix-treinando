@@ -28,6 +28,7 @@ em relação à largura e altura usadas do elemento. */
 .nav__logo {
     width: 80px;
     object-fit: contain;
+/* - específica como o conteúdo de um elemento deve ficar organizado dentro da caixa designada para esse elemento */
 }
 
 /* A foto "avatar" é ajustar para conter na caixa com a largura de 30px*/
