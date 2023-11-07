@@ -48,3 +48,83 @@ em relação à largura e altura usadas do elemento. */
     transition-timing-function: ease-in; /* Efeito de transição com inicio */
     transition: all 0.5s; /* Aparece em 0.5s */
 }
+
+/* Parte 2: Header; */
+
+/* Configura a imagem de fundo do banner, centraliza, coloca uma cor branca acima */
+/* O banner fica contido na div, com altura 488px */
+
+.banner {
+    background-image: url('images/instituicao/canva.png');
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    height: 448px;
+}
+
+/* Configura as margens, padding e altura da div banner */
+.banner__contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+/* O título terá fonte 3x maior que as demais, peso 800 e uma distância em relação aos botões */
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    -webkit-text-stroke-width: 1px; /* espessura do contorno das letras */
+    -webkit-text-stroke-color: #000; /*cor do contorno */
+    color: #fffdd9; /* cor da letra */
+}
+
+/* A descrição tem 45 relativo de largura, linha vertical de 1.3 padding em relação 
+ao topo de 1rem, tamanho de fonte e altura máxima relativas e altura 180px */
+
+.banner__description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1rem;
+    max-width: 360px;
+    height: 180px;
+    /*-webkit-text-stroke-width: 0.5px; /* espessura do contorno das letras */
+    /*-webkit-text-stroke-color: #000; /*cor do contorno */
+    color: #fff /* cor da letra */
+}
+
+/* configuação dos botões do banner */
+.banner__button {
+    cursor: pointer; /*cursor apontar */
+    color: #fff; /* cor da letra */
+    outline: none; /*sem sublinhado */
+    /*border: none; /* sem borda */
+    font-weight: 700; /* negrito */
+    border-radius: 0.2vw; /* borda arredendondada */
+    padding-left: 2rem; /* padding esquerda */
+    padding-right: 2rem; /* padding direita */
+    margin-right: 1rem; /* margem de cima */
+    padding-top: 0.5rem; /* padding em cima */
+    padding-bottom: 0.5rem; /* padding em baixo */
+    background-color: rgba(51, 51, 51, 0.5); /* cor de fundo */
+}
+
+/* Quando selecionamos o botão com o mouse,
+    ele muda de cor com animação */
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+/* configuração que posiciona o banner e aplicar um
+fade out na imagem que vai ficando com cor do conteúdo
+que vem a seguir */
+.banner__fadeBottom {
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
